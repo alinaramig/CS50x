@@ -1,0 +1,56 @@
+body {
+    background-color: #fff;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+}
+.jumbotron {
+    background-color: #ABCAEC;
+    color: #000000;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+h1 {
+    font-family: 'Gargamond', serif;
+    font-size: 48px;
+}
+.headshot {
+    width: 20%;
+    height: 20%;
+    transform: scaleX(-1);
+}
+h5 {
+    font-family: 'Gargamond', serif;
+    font-size: 30px;
+}
+p {
+    font-family: 'Gargamond', serif;
+    font-size: 20px;
+}
+.custom {
+    font-family: 'Gargamond', serif;
+    font-size: 20px;
+}
+.topper {
+    font-size: 40px;
+}
+.linked {
+    width: 10%;
+    height: 10%;
+}
+.medium {
+    width: 50%;
+    height: 50%;
+}
+.hobby {
+     width: 20%;
+    height: 20%;
+}
+.instagram {
+    width: 12%;
+    height: 12%;
+}

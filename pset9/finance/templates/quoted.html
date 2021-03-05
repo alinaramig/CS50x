@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <thead>
+        A share of {{ info.name }} ({{ info.symbol }}) costs {{ info.price | usd }}
+    </thead>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+<table class="table table-striped">
+    <thead>
+        <th scope="col">Type</th>
+        <th scope="col">Symbol</th>
+        <th scope="col">Shares</th>
+        <th scope="col">Price</th>
+        <th scope="col">Transacted</th>
+    </thead>
+    <tbody>
+        <!--Loop through the database entries to display them in this table-->
+         {% for transaction in transactions %}
+             <tr>
+                <td> {{ transaction.type }} </td>
+                <td> {{ transaction.symbol }}</td>
+                <td> {{ transaction.shares }}</td>
+                <td> {{ transaction.price }}</td>
+                <td> {{ transaction.transacted }}</td>
+            </tr>
+         {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
