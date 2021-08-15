@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Match
+{% endblock %}
+
+{% block main %}
+<h1 class="py-3 rate-header"> Select User To Match Movies </h1>
+
+<h3 class="py-3 rate-header"> Your Friend Code: {{ friend_code }} </h3>
+
+<form action=/match method="POST">
+    <div class="form-group">
+        <label for="friend_code"> Type in your friend's code to match with them </label>
+        <input type="code" class="form-control" id="code" name="code" placeholder="friend code">
+    </div>
+    <button type="submit" class="btn btn-fun"> Match </button>
+</form>
+
+{% endblock %}

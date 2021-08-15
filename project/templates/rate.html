@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Rate Movies
+{% endblock %}
+
+{% block main %}
+<h1 class="py-3 rate-header"> Rate Your Movies </h1>
+
+<ul class="list-unstyled">
+
+{% for movie in movies %}
+
+    <li class="media">
+        <img class="py-1 poster" src="{{ movie.image }}">
+        <div class="media-body">
+            <h5 class="mt-0 py-1 ml-3"> {{ movie.title }} </h5>
+            <p class="ml-4">({{ movie.year }}),  {{ movie.rating }}/10 </p>
+
+            <form action=/rate method="POST">
+                <div class="custom-control custom-radio ml-4">
+                <input class="custom-control-input" type="radio" name="like" id="like" value="like">
+                <label class="custom-control-label" for="like">
+                  Like
+                </label>
+              </div>
+              <div class="custom-control custom-radio ml-4">
+                <input class="custom-control-input" type="radio" name="dislike" id="dislike" value="dislike">
+                <label class="custom-control-label" for="dislike">
+                  Dislike
+                </label>
+              </div>
+              <div class="form-group">
+                <input name="movie" class="movie" value="{{ movie.id }}">
+              </div>
+              <button type="submit" class="btn btn-fun ml-4">Rate</button>
+            </form>
+        </div>
+    </li>
+
+{% endfor %}
+</ul>
+{% endblock %}

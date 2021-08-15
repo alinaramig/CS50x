@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Match
+{% endblock %}
+
+{% block main %}
+
+<h1 class="py-3 home-header"> Your Matches </h1>
+
+<ul class="list-unstyled">
+
+{% for match in matches %}
+
+    <li class="media">
+        <img class="py-1 poster" src="{{ match.image }}">
+        <div class="media-body">
+            <h5 class="mt-0 py-1 ml-3"> {{ match.title }} </h5>
+            <p class="ml-4">({{ match.year }}),  {{ match.rating }}/10 </p>
+        </div>
+    </li>
+
+{% endfor %}
+</ul>
+
+{% endblock %}

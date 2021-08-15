@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+
+<h1 class="py-3 home-header"> Liked Movies </h1>
+
+<ul class="list-unstyled">
+
+{% for like in likes %}
+
+    <li class="media">
+        <img class="py-1 poster" src="{{ like.image }}">
+        <div class="media-body">
+            <h5 class="mt-0 py-1 ml-3"> {{ like.title }} </h5>
+            <p class="ml-4">({{ like.year }}),  {{ like.rating }}/10 </p>
+        </div>
+    </li>
+
+{% endfor %}
+</ul>
+
+{% endblock %}

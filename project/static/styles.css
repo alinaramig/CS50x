@@ -1,0 +1,36 @@
+nav .navbar-brand .logo
+{
+    /* size for brand */
+    font-size: xx-large;
+    color: #FDF200;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    
+}
+nav .nav-link
+{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.btn-fun
+{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    background-color: #F50C81;
+    color: #FDF200;
+}
+.rate-header
+{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+.poster
+{
+    width: 20%;
+    height: 20%;
+}
+.movie
+{
+    visibility: hidden;
+}
+.home-header
+{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
